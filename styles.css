@@ -12,6 +12,7 @@
   border: 1px solid #333;
   border-radius: 0.25em;
   position: relative;
+  cursor: pointer;
 }
 
 .toast::after {
@@ -25,6 +26,9 @@
   position: fixed;
   margin: 10px;
   width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .toast-container[data-position^="top"] {
