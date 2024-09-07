@@ -1,5 +1,23 @@
-*, *::after, *::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.toast {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 0.25em;
+  position: relative;
+  max-width: 250px;
+}
+
+.toast::after {
+  content: "\00D7";
+  position: absolute;
+  top: 2px;
+  right: 5px;
 }
